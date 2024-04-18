@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- cau hinh bootstrap -->
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <script src="../js/jquery-3.7.1.min.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+         <!-- cau hinh bootstrap -->
+         <!-- local css js  -->
+         <link rel="stylesheet" href="../css/bankho.css">
+         <script src="../js/thongtinSanpham.js"></script>
+         <script src="../js/caidat.js"></script>
+         <!-- local css js  -->
+     <!-- cau hinh icon  -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- cau hinh icon  -->
+    <style>
+        body{
+            background-image: url(../img/anhheader.png);
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <div class="row justify-content-around">
+          <form method="" class="col-md-6 bg-light p-3 my-3 " action="">
+                <h2 class="text-center h3">ĐĂNG KÍ TÀI KHOẢN</h2>
+             <div class="form-group mb-3">
+                   <label for="Fullname">Họ và Tên</label>
+                   <input type="text"  onblur="ktHoTenDK()" name="Fullname" id="txtname" class="form-control"placeholder="Fullname">
+                   <span id="mesName" style="color: red;"></span>
+                </div>
+             <div class="form-group mb-3">
+                    <label for="mail">Email</label>
+                    <input type="email" onblur="ktEmailDK()" name="mail" id="txtemail" class="form-control"placeholder="Email@gmail.com">
+                    <span id="mesEmail" style="color: red;"></span>
+             </div>
+             <div class="form-group mb-3">
+                 <label for="sdt">SDT</label>
+                  <input type="text" onblur="ktDienThoaiDK()" name="sdt" id="txtsdt" class="form-control"placeholder="0xxx-xxx-xxx">
+                  <span id="mesSDT"></span>
+             </div>
+             <div class="form-group mb-3">
+                 <label for="sinh">Ngày sinh</label>
+                    <input type="date" onblur="ktNgayDK()" name="sinh" id="txtngay" class="form-control">
+                    <span id="mesNgay" style="color: red;"></span>
+             </div>
+             <div class="form-group mb-3">
+                <label for="mk">Mật khẩu</label>
+                   <input type="password" onblur="ktMatKhauDK()" name="mk" id="txtmk" class="form-control" placeholder ="Nhập vào Mật Khẩu">
+                   <span id="mesMK" style="color: red;"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label for="gt">Giới tính</label><br>
+                 <input type="radio"  id="gtnam" class="form-check-input " name="gioitinh" id="gtNam">Nam
+                 <input type="radio"  id="gtnu" class="form-check-input ms-4 " name="gioitinh" id="gtNu">Nữ
+            </div>
+            <div class="form-group mb-3">
+                <button type="button" onclick="KTDangKi()" class="btn btn-success w-100" id="dangki"  >Đăng Ký</button>
+            </div>
+            <div class="form-group float-end">
+              <a href="dangnhap.html" class="text-danger pos">Bạn đã có tài Khoản?</a>
+            </div>
+          </form>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
